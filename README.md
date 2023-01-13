@@ -8,5 +8,7 @@ pnpm run dev
 pnpm run build
 
 # 组件库
-# 按钮 <vxw-button></vxw-button>
-# 输入框 <vxw-input></vxw-input>
+# 按钮
+<vxw-button></vxw-button>
+# 输入框
+<vxw-input></vxw-input>
