@@ -3,11 +3,6 @@
 个人学习用的ui组件库,慎重使用
 ```
 
-## npm
-```
-pnpm install vxwui
-```
-
 ## 安装依赖
 ```
 pnpm install
