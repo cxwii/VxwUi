@@ -22,7 +22,7 @@ pnpm run build
 ## demo
 ```
 // main.js
-// 全局导入123
+// 全局导入
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
