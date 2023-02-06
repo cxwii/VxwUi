@@ -1,0 +1,14 @@
+.button-success {
+  width: 64px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  user-select: none;
+  background-color: $button-success-color;
+}
+.button-success:hover {
+  cursor: pointer;
+  background-color: $button-success-hover-color;
+}

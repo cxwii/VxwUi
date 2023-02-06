@@ -14,7 +14,3 @@ export default defineComponent({
     这是个输入框
   </div>
 </template>
-
-<style scoped lang="scss">
-@import '../style/input.scss'
-</style>

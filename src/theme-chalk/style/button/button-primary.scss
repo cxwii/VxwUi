@@ -1,0 +1,14 @@
+.button-primary {
+  width: 64px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  user-select: none;
+  background-color: $button-primary-color;
+}
+.button-primary:hover {
+  cursor: pointer;
+  background-color: $button-primary-hover-color;
+}
