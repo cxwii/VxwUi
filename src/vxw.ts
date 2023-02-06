@@ -1,6 +1,6 @@
 import { App } from "vue";
-import button from "../button/button";
-import input from "../input/input";
+import button from "@/components/button/button";
+import input from "@/components/input/input";
 
 // 按需导出
 export { 
