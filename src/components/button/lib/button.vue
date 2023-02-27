@@ -2,49 +2,43 @@
 import { defineComponent, PropType, computed } from 'vue'
 
 type buttonType = 'primary' | 'success' | 'danger'
-const buttonValidator: Array<string> = [ 'primary', 'success', 'danger' ]
+const buttonTypeValidator: Array<string> = [ 'primary', 'success', 'danger' ]
 
 export default defineComponent({
   name: 'vxw-button',
   props: {
+    // 状态
     type: {
       type: String as PropType<buttonType>,
       validator: (value: buttonType) => {
-        return buttonValidator.includes(value)
+        return buttonTypeValidator.includes(value)
       },
       default: 'primary'
     },
-    value: {
-      type: String,
-      validator: (value: string) => {
-        if(value.length > 5) {
-          return false
-        } else {
-          return true
-        }
-      },
-      default: '按钮'
-    }
+    // 是否禁用
+    disabled: Boolean,
+    // 是否圆角
+    round: Boolean,
+    // 是否加载
+    roading: Boolean
   },
   setup(props, ctx) {
-    const vxwClass = computed(() => {
-      if (!buttonValidator.includes(props.type)) {
-        
+    const classs = computed(() => [
+      'vxw-button',
+      'vxw-button--' + props.type,
+      {
+        'is-disabled': props.disabled,
+        'is-round': props.round,
+        'is-roading': props.roading
       }
-      return [
-
-      ]
-    })
+    ])
     return {
-      vxwClass
+      classs
     }
   }
 })
 </script>
 
 <template>
-  <!-- <div :class="'button-' + type">
-    {{ value }}
-  </div> -->
-  <div class="vxw-button"></div>
+  <button :class="classs"></button>
 </template>

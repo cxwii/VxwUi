@@ -1,6 +1,8 @@
 @import './config.scss';
 
-// BEM规范方法
+/* BEM规范方法 */
+
+// .vxw-xxx
 @mixin b($block) {
   $B: $namespace+'-'+$block !global;
 
@@ -9,6 +11,7 @@
   }
 };
 
+// .vxw-xxx.is-xxx
 @mixin when($state) {
   @at-root {
     &.#{$state-prefix + $state} {
@@ -17,6 +20,7 @@
   }
 };
 
+// .vxw-xxx--xxx
 @mixin m($modifier) {
   @at-root {
     #{& + $modifier-separator + $modifier} {
@@ -25,6 +29,7 @@
   }
 }
 
+// .vxw-xxx__xxx
 @mixin m($element) {
   @at-root {
     #{& + $element-separator + $element} {
