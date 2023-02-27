@@ -1,0 +1,29 @@
+@import '../../mixins/config.scss';
+
+@font-face {
+  font-family: "vxw"; /* Project id 3919910 */
+  src: url('@/theme-chalk/fonts/iconfont.woff2') format('woff2'),
+       url('@/theme-chalk/fonts/iconfont.woff') format('woff'),
+       url('@/theme-chalk/fonts/iconfont.ttf') format('truetype');
+}
+
+[class^='#{$namespace}-'] {
+  font-family: "vxw" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vxw-gongneng_chenggong:before {
+  content: "\e625";
+}
+
+.vxw-shanchu:before {
+  content: "\e65f";
+}
+
+.vxw-jiazai:before {
+  content: "\e6b4";
+}
+

@@ -30,10 +30,23 @@
 }
 
 // .vxw-xxx__xxx
-@mixin m($element) {
+@mixin e($element) {
   @at-root {
-    #{& + $element-separator + $element} {
+    #{& + $vxwui-separator + $element} {
       @content;
     }
+  }
+}
+
+// 处理button type
+@mixin button-type($backgroundColor) {
+  background-color: $backgroundColor;
+  color: #ffffff;
+}
+
+// 处理button type hover和focus
+@mixin button-type-select($backgroundColor) {
+  &:hover,:focus {
+    background-color: $backgroundColor;
   }
 }

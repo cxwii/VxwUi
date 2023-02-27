@@ -1,17 +1,17 @@
 import { App } from "vue";
 import button from "@/components/button/button";
-import input from "@/components/input/input";
+import icon from "@/components/icon/icon";
 
 // 按需导出
 export { 
   button,
-  input
+  icon
 }
 
 // 全局导出
 const components = [
   button,
-  input
+  icon
 ]
 
 const install = (app: App) => {

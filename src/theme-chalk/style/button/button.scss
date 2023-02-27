@@ -2,23 +2,37 @@
 @import '../../mixins/mixin.scss';
 
 @include b(button) {
-  width: 64px;
+  width: 80px;
   height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
   user-select: none;
   border-style: none;
-  background-color: #409eff;
+  border-radius: 6px;
+  vertical-align: middle;
 
   &:hover {
     cursor: pointer;
-    background-color: #3375b9;
+  }
+
+  @include m(primary) {
+    @include button-type($button-primary-color);
+    @include button-type-select($button-primary-select-color);
+  }
+
+  @include m(success) {
+    @include button-type($button-success-color);
+    @include button-type-select($button-success-select-color);
+  }
+
+  @include m(danger) {
+    @include button-type($button-danger-color);
+    @include button-type-select($button-danger-select-color);
   }
 
   @include when(disabled) {
     cursor: not-allowed;
-    background-color: #409eff;
+  }
+
+  @include when(round) {
+    border-radius: 18px;
   }
 }

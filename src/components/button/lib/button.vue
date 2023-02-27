@@ -18,9 +18,7 @@ export default defineComponent({
     // 是否禁用
     disabled: Boolean,
     // 是否圆角
-    round: Boolean,
-    // 是否加载
-    roading: Boolean
+    round: Boolean
   },
   setup(props, ctx) {
     const classs = computed(() => [
@@ -28,10 +26,10 @@ export default defineComponent({
       'vxw-button--' + props.type,
       {
         'is-disabled': props.disabled,
-        'is-round': props.round,
-        'is-roading': props.roading
+        'is-round': props.round
       }
     ])
+
     return {
       classs
     }
@@ -40,5 +38,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <button :class="classs"></button>
+  <button :class="classs">
+    <span v-if="$slots.default">
+      <slot></slot>
+    </span>
+  </button>
 </template>
