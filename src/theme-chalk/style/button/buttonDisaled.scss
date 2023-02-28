@@ -1,7 +1,7 @@
 @import '../../common/var.scss';
 @import '../../mixins/mixin.scss';
 
-@include b(button) {
+@include b(buttonDisaled) {
   width: 80px;
   height: 32px;
   user-select: none;
@@ -16,17 +16,17 @@
   // type
   @include m(primary) {
     @include button-type($button-primary-color);
-    @include button-type-select($button-primary-select-color);
+    // @include button-type-select($button-primary-select-color);
   }
 
   @include m(success) {
     @include button-type($button-success-color);
-    @include button-type-select($button-success-select-color);
+    // @include button-type-select($button-success-select-color);
   }
 
   @include m(danger) {
     @include button-type($button-danger-color);
-    @include button-type-select($button-danger-select-color);
+    // @include button-type-select($button-danger-select-color);
   }
 
   // is

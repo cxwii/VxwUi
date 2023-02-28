@@ -5,12 +5,14 @@
 </script>
 
 <template>
-  <vxw-button @click=clickButton type="primary">按钮1</vxw-button>
-  <vxw-button type="success" @click=clickButton disabled="false">按钮2</vxw-button>
-  <vxw-button type="danger" round>按钮3</vxw-button>
-  <vxw-button type="danger" round></vxw-button>
+  <vxw-button type="primary">按钮</vxw-button>
+  <vxw-button type="success" round>成功</vxw-button>
+  <vxw-button type="danger" disabled>失败</vxw-button>
+  <vxw-button type="primary" circle="anniu"></vxw-button>
+  <vxw-button type="success" circle="gongneng_chenggong"></vxw-button>
+  <vxw-button type="danger" circle="shanchu" disabled></vxw-button>
   <br/>
-  <vxw-icon name="jiazai"></vxw-icon>
+  <vxw-icon name="anniu">123</vxw-icon>
   <vxw-icon name="gongneng_chenggong"></vxw-icon>
   <vxw-icon name="shanchu"></vxw-icon>
 </template>
