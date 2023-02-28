@@ -19,7 +19,7 @@ export default defineConfig({
     outDir: "VxwUi",
     lib: {
       // 打包入口路径
-			entry: path.resolve(__dirname, "./src/components/vxw/vxw.ts"),
+			entry: path.resolve(__dirname, "./src/vxw.ts"),
 			name: "VxwUi",
 			fileName: "VxwUi",
 		},

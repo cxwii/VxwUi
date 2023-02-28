@@ -1,6 +1,7 @@
 import { App } from "vue";
 import button from "@/components/button/button";
 import icon from "@/components/icon/icon";
+import "./theme-chalk/index.scss";
 
 // 按需导出
 export { 

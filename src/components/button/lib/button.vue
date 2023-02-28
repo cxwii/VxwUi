@@ -1,5 +1,4 @@
 <script lang="ts">
-import { type } from 'os'
 import { defineComponent, PropType, computed } from 'vue'
 
 // button type
