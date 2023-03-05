@@ -71,6 +71,7 @@ export default defineComponent({
   <button v-if="icon" :class="classs">
     <vxw-icon :name="icon"></vxw-icon>
   </button>
+  <!-- disabled -->
   <button v-else-if="disabled" :class="disabledClasss">
     <span v-if="$slots.default">
       <slot></slot>
