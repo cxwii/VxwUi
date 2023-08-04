@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import {onMounted} from 'vue'
-import vxw from './vxw';
   const clickButton = () => {
     console.log('点击事件')
   }
